@@ -6,8 +6,8 @@
 		<script src = "//php/76528/jquery-3.1.0.js"></script>
 		<style>
 			body { background-color:#595959;margin: 0 auto; margin-top: 50px; width: 1000px; border: 1px solid red; }
-			td { padding: 5px; background-color:blue; /* transition: all .3s linear; */}
-			.err { background-color: red; /* transition: all .3s linear; */ }
+			td { padding: 5px; background-color:blue; transition: all .3s linear;}
+			.err { background-color: red; transition: all .3s linear; }
 		</style>
 	</head>
 	<body>
