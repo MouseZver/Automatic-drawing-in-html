@@ -88,7 +88,10 @@ final class mysqli implements \Aero\Database\InterfaceDriver
 	
 	public function close()
 	{
-		( $this -> lerma -> statement ?? $this -> lerma -> query ) -> close();
+		if ( gettype ( $close = ( $this -> lerma -> statement ?? $this -> lerma -> query ) ) != 'boolean' )
+		{
+			$close -> close();
+		}
 		
 		$this -> lerma -> statement = $this -> lerma -> query = $this -> result = null;
 		
